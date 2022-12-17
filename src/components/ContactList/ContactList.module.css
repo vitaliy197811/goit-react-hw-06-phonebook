@@ -1,0 +1,19 @@
+.contacts {
+    display: block;
+    background-color: aquamarine;
+    border: 2px solid blue;
+    border-radius: 5px;
+    margin: 0;
+    margin-top: 20px;
+    padding: 10px 30px;
+}
+
+
+.item {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px 0;
+}
