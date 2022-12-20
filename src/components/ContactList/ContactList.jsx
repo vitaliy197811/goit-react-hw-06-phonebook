@@ -2,11 +2,11 @@ import React from 'react';
 import ContactItem from 'components/ContactItem/ContactItem';
 import css from './ContactList.module.css';
 import { useSelector, useDispatch } from 'react-redux';
-import { getContacts, getFilter, deleteContact } from 'redux/slice';
+import { deleteContact } from 'redux/slice';
 
 const ContactList = () => {
-    const contacts = useSelector(getContacts);
-    const filterContacts = useSelector(getFilter);
+    const contacts = useSelector(state => state.contacts.items);
+    const filterContacts = useSelector(state => state.contacts.filter);
     const dispatch = useDispatch();
 
     const showVisibleContacts = () => (
